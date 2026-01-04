@@ -47,7 +47,7 @@ def get_category(product):
 def get_amount(product,category):
     while True:
         try :
-            amount = int(input(f"Enter the price of {product} from the category {category} : "))
+            amount = float(input(f"Enter the price of {product} from the category {category} : "))
             if amount < 0:
                 print("Enter a valid price")
                 continue
